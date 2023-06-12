@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+  <header class="header">
+    <a href="" class="logo"><p><img src="https://w7.pngwing.com/pngs/697/873/png-transparent-yoga-vriksasana-silhouette-yoga-branch-nutrition-sports.png" width="20" height="25" align="bottom" /> 
+        Yogo Studio Sunshine</p> </a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+      <li><a href="index.html">Main</a></li>
+      <li><a href="2.html">Our Certificates/Team</a></li>
+      <li><a href="3.html">Our Chanel</a></li>
+      <li><a href="4.html">Contact</a></li>
+    </ul>
+  </header>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-5" />
+<style type="text/css">
+  *{
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+  }
+  
+  a {
+    color: #000;
+  }
+  
+  /* header */
+  
+  .header {
+    background-color: #ffffff;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+  }
+  
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #adb2b5;
+  }
+  
+  .header li a {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+  }
+  
+  .header li a:hover,
+  .header .menu-btn:hover {
+    background-color: #fec1c6;
+  }
+  
+  .header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  /* menu */
+  
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  /* menu icon */
+  
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  /* menu icon */
+  
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  
+  /* 48em = 768px */
+  
+  @media (min-width: 48em) {
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 30px;
+    }
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+  }
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-5" />
+<style type="text/css">
+* {
+  padding:0;
+  margin:0;
+  border:0;
+}
+#content {
+  margin:0px;
+  padding:5px;
+  text-align:center;
+  list-style:none;
+  white-space:nowrap;
+}
+#content LI {
+  display:inline-block;
+  margin:0 -2px;
+  vertical-align:top;
+}
+#content LI A {
+  display:inline-block;
+  border:rgb(255, 0, 0) 1px solid;
+  margin:0 30px 0 0;
+  padding:10px 20px;
+  text-decoration:none;
+  color:rgb(255, 255, 255);
+  vertical-align:bottom;
+}
+#content LI A:hover {
+  color:rgb(187, 113, 113);
+}
+@-moz-document url-prefix() {
+  #content LI {display:-moz-inline-grid;display:inline-block;} /*For FF2 only*/
+  #content LI {margin:0 -2px;} /*For FF*/        
+  #content LI, x:-moz-any-link, x:default { margin:0 -2px;} /*For FF3*/
+}
+ 
+</style>
+<!--[if lte IE 7]>
+<style type="text/css">
+#content LI {
+  display:inline;
+  margin:0;
+}
+</style>
+<![endif]-->
+<body>
+  <div>
+  <img src="https://sun9-27.userapi.com/impg/AP6a9JF3dPLkrKC-iJU4sD_6uBKzRq6rwAYPpw/mLWQuT7R3ss.jpg?size=2415x737&quality=95&sign=0c1b87c672c0cf2cba4f76e52488904a&type=album" width="100%" height="650">
+</div>
+    <br>
+    <p>
+      <h1><center>Congrats!!! We finallyhave 500k followers. Thank u all)</center></h1>
+    </p>
+  <div class="video-container">
+      <iframe width="700" height="120" src="https://www.youtube.com/watch?v=0HD3VoUVov0" frameborder="0" allowfullscreen></iframe>
+  </div>
+</body>
+<head>
+  <title>Our Chanel</title>
+</head>
+<style>
+  body{
+      background-image: url('https://www.colorhexa.com/adb2b5.png');
+      background-attachment: fixed;
+  }
+</style>
+<body>
+  <center><iframe width="560" height="315" src="https://www.youtube.com/embed/ZgT-xl1V-JY" frameborder="0" allowfullscreen></iframe></center>
+  <br><br>
+  <h1><center>don't forget to subscribe)</center></h1>
+  <br><br><br><br>
+</body>
+</html>

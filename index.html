@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+  <header class="header">
+    <a href="" class="logo"><p><img src="https://w7.pngwing.com/pngs/697/873/png-transparent-yoga-vriksasana-silhouette-yoga-branch-nutrition-sports.png" width="20" height="25" align="bottom" /> 
+        Yogo Studio Sunshine</p> </a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+      <li><a href="index.html">Main</a></li>
+      <li><a href="2.html">Our Certificates/Team</a></li>
+      <li><a href="3.html">Our Chanel</a></li>
+      <li><a href="4.html">Contact</a></li>
+    </ul>
+  </header>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-5" />
+<style type="text/css">
+  *{
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+  }
+  
+  a {
+    color: #000;
+  }
+  
+  /* header */
+  
+  .header {
+    background-color: #ffffff;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+  }
+  
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #adb2b5;
+  }
+  
+  .header li a {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+  }
+  
+  .header li a:hover,
+  .header .menu-btn:hover {
+    background-color: #fec1c6;
+  }
+  
+  .header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  /* menu */
+  
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  /* menu icon */
+  
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  
+  /* 48em = 768px */
+  
+  @media (min-width: 48em) {
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 30px;
+    }
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+  }
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-5" />
+<style type="text/css">
+* {
+  padding:0;
+  margin:0;
+  border:0;
+}
+#content {
+  margin:0px;
+  padding:5px;
+  text-align:center;
+  list-style:none;
+  white-space:nowrap;
+}
+#content LI {
+  display:inline-block;
+  margin:0 -2px;
+  vertical-align:top;
+}
+#content LI A {
+  display:inline-block;
+  border:rgb(255, 0, 0) 1px solid;
+  margin:0 30px 0 0;
+  padding:10px 20px;
+  text-decoration:none;
+  color:rgb(255, 255, 255);
+  vertical-align:bottom;
+}
+#content LI A:hover {
+  color:rgb(187, 113, 113);
+}
+@-moz-document url-prefix() {
+  #content LI {display:-moz-inline-grid;display:inline-block;} /*For FF2 only*/
+  #content LI {margin:0 -2px;} /*For FF*/        
+  #content LI, x:-moz-any-link, x:default { margin:0 -2px;} /*For FF3*/
+}
+ 
+</style>
+<!--[if lte IE 7]>
+<style type="text/css">
+#content LI {
+  display:inline;
+  margin:0;
+}
+</style>
+<![endif]-->
+ 
+<title>Main</title>
+</head>
+<head>
+  <meta charset="utf-8">
+  <title>Кнопка</title>
+  <style>
+   .btn {
+    display: inline-block; /* Строчно-блочный элемент */
+    background: #8C959D; /* Серый цвет фона */
+    color: #fff; /* Белый цвет текста */
+    padding: 1rem 1.5rem; /* Поля вокруг текста */
+    text-decoration: none; /* Убираем подчёркивание */
+    border-radius: 3px; /* Скругляем уголки */
+   }
+  </style>
+ </head>
+ <body> 
+  <a href="page/new.html" class="btn">Переход по ссылке</a>
+ </body>
+ 
+<body>
+  <br>
+ 
+  <div id="tekst">
+
+    <img src="https://hips.hearstapps.com/hmg-prod/images/10-minute-yoga-1668510425.jpg?crop=0.8886998440379981xw:1xh;center,top&resize=1200:*" width="100%" height="800"  alt="Yoga Studio Sunshine">
+    
+    
+    </div>
+    <br> <br> <br><br><br><br><br>
+    <head>
+      <title>Main</title>
+    <style>
+        .button {
+            display: inline-block;
+            padding: 50px 100px;
+            font-size: 48px;
+            background-color: white;
+            color:  rgb(254, 193, 198);
+            text-decoration: none;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: rgb(254, 193, 198);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <center><a href="https://www.youtube.com/watch?v=SOKu_QFc6qU" class="button">R Yoga</a>
+<a href="https://www.youtube.com/watch?v=bEqw2zOe_fo" class="button">K Yoga</a></center>
+</body>
+<head>
+    <style>
+        .button {
+            display: inline-block;
+            padding: 50px 100px;
+            font-size: 36px;
+            background-color: white;
+            color:  rgb(173,178,181);
+            text-decoration: none;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: rgb(254, 193, 198);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <center><a href="https://www.youtube.com/watch?v=xfhfltT2Keo" class="button">S Yoga </a>
+<a href="https://www.youtube.com/watch?v=b1H3xO3x_Js" class="button">P Yoga </a></center>
+</body>
+<head>
+    <style>
+        .container {
+            display: inline-block;
+            width: 300px;
+            height: 400px;
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 20px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .container:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .text {
+            padding: 10px;
+            color: #fff;
+            font-family: "Arial", sans-serif;
+            font-size: 18px;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
+<br> <br><br><br><br>
+<body>
+  <br><br>
+  <center><div class="text">Best Yoga Poses for Beginers</div></center>
+  <br>
+    <center><div class="container">
+        <img src="https://www.verywellfit.com/thmb/CpD6HFaz_s0XdM_Z9kZLLRP5Zk0=/750x0/filters:gifv(mp4)/Verywell-03-3567198-Warrior2copy-598b7c57396e5a0010148cc5.gif" alt="Image 1" class="image">
+        <div class="text"><p>Warrior II (Virabhadrasana II)</p>
+          <p>Pose type: Standing</p>
+
+          Unlike Warrior I, in Warrior II, the hips face the side of the mat. The hips and shoulders open to the side when moving from Warrior I to Warrior II.
+          <p><a href="https://www.verywellfit.com/warrior-ii-virabhadrasana-3567136">How to Do Warrior II</a></p>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <img src="https://www.verywellfit.com/thmb/3teuCjbH3ULOijiNUXGcIrVEdYM=/750x0/filters:gifv(mp4)/essential-yoga-poses-for-beginners-3566747-extended-side-pose-9de7fd3bb5c740d59b338f7cd3a14235.gif" alt="Image 2" class="image">
+        <div class="text"><p>Extended Side Angle (Utthita Parvakonasana)</p>
+          <p>Pose type: Standing</p>
+
+          One modification of Extended Side Angle Pose is to bring your forearm to your thigh instead of placing your hand on the floor. 
+          <p><a href="https://www.verywellfit.com/extended-side-angle-pose-utthita-parsvakonasana-3567116">How to Do Extended Side Angle</a></p>
+        </div>
+    </div>
+
+    <div class="container">
+        <img src="https://www.verywellfit.com/thmb/fr2FGolxPI6Sddh7xShod8YY3Iw=/750x0/filters:gifv(mp4)/reverse-warrior-679d7e69208e46b2bc0129032fdbba3a.gif" alt="Image 3" class="image">
+        <div class="text"><p>Reverse Warrior (Viparita Virabhadrasana)</p>
+          <p>Pose type: Standing</p>
+
+          Reverse Warrior shares a similar stance to Warrior I and incorporates a slight heart-opening side bend or optional backbend.
+
+<p><a href="https://www.verywellfit.com/reverse-warrior-pose-3567108">How to Do Reverse Warrior</a></p>
+</div>
+        
+    </div></center>
+</body>
+<br><br><br><br>
+<head>
+  <style>
+      body {
+          font-family: Arial, sans-serif;
+      }
+      
+      .text-block {
+          margin: 20px;
+          padding: 20px;
+          border: 1px solid #ccc;
+          border-radius: 10px;
+          background-color: #f9f9f9;
+          text-align: justify;
+          line-height: 1.5;
+      }
+  </style>
+</head>
+<body>
+  <style>
+    body{
+        background-image: url('https://www.colorhexa.com/adb2b5.png');
+        background-attachment: fixed;
+    }
+</style>
+  <div class="text-block">
+      <h2>What is Yoga?</h2>
+      <p>Yoga is an ancient practice that originated in India. It encompasses a variety of physical, mental, and spiritual disciplines aimed at promoting overall well-being and harmony.</p>
+      <p>At its core, yoga focuses on the union of mind, body, and spirit. Through a combination of physical postures, breathing exercises, and meditation, practitioners seek to cultivate self-awareness, inner peace, and balance.</p>
+      <p>Yoga offers numerous benefits for both the body and mind. Physically, it helps improve flexibility, strength, and posture. It also enhances cardiovascular health and promotes better circulation. Mentally, yoga helps reduce stress, anxiety, and depression, while increasing mental clarity and focus.</p>
+      <p>Beyond its physical and mental benefits, yoga is often seen as a spiritual practice. It provides a means for individuals to connect with their inner selves and explore their spiritual nature. It encourages self-reflection, mindfulness, and compassion towards oneself and others.</p>
+      <p>Yoga is a versatile practice that can be adapted to suit individual needs and preferences. Whether practiced in a group setting or individually, it offers a space for self-discovery, personal growth, and holistic well-being.</p>
+  </div>
+
+  <div class="text-block">
+      <h2>Why I should do Yoga?</h2>
+      <p>Yoga is a transformative practice that offers numerous benefits for both the body and mind. Here are some reasons why you should consider doing yoga:</p>
+      <p><strong>Physical well-being:</strong> Yoga helps improve flexibility, strength, and balance. It can also enhance your posture and increase your overall physical fitness.</p>
+      <p><strong>Mental clarity:</strong> Regular yoga practice can help calm the mind, reduce stress, and improve mental clarity. It provides an opportunity to disconnect from the outside world and find inner peace.</p>
+      <p><strong>Stress relief:</strong> Yoga incorporates breathing exercises and meditation, which are known to promote relaxation and reduce anxiety. It can be a valuable tool for managing stress and finding balance in your daily life.</p>
+      <p><strong>Improved focus and concentration:</strong> The combination of physical postures and mindful breathing in yoga can enhance your ability to concentrate and improve your focus.</p>
+      <p><strong>Self-discovery and personal growth:</strong> Yoga encourages self-reflection and introspection. It allows you to explore your inner self, develop self-awareness, and foster personal growth.</p>
+      <p><strong>Holistic well-being:</strong> Yoga takes a holistic approach to health and well-being by addressing the physical, mental, and spiritual aspects of your being. It promotes a sense of balance, harmony, and overall well-being.</p>
+      <p>Whether you're looking to improve your physical fitness, reduce stress, or embark on a journey of self-discovery, yoga can be a valuable practice to incorporate into your life. Give it a try and experience the transformative power of yoga firsthand!</p>
+  </div>
+</body>
+<br><br><br>
+</html
+</html>

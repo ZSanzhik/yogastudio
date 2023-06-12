@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+  <header class="header">
+    <a href="" class="logo"><p><img src="https://w7.pngwing.com/pngs/697/873/png-transparent-yoga-vriksasana-silhouette-yoga-branch-nutrition-sports.png" width="20" height="25" align="bottom" /> 
+        Yogo Studio Sunshine</p> </a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+      <li><a href="index.html">Main</a></li>
+      <li><a href="2.html">Our Certificates/Team</a></li>
+      <li><a href="3.html">Our Chanel</a></li>
+      <li><a href="4.html">Contact</a></li>
+    </ul>
+  </header>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-5" />
+<style type="text/css">
+  *{
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+  }
+  
+  a {
+    color: #000;
+  }
+  
+  /* header */
+  
+  .header {
+    background-color: #ffffff;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+  }
+  
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #adb2b5;
+  }
+  
+  .header li a {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+  }
+  
+  .header li a:hover,
+  .header .menu-btn:hover {
+    background-color: #fec1c6;
+  }
+  
+  .header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  /* menu */
+  
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  /* menu icon */
+  
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  /* menu icon */
+  
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  
+  /* 48em = 768px */
+  
+  @media (min-width: 48em) {
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 30px;
+    }
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+  }
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-5" />
+<style type="text/css">
+* {
+  padding:0;
+  margin:0;
+  border:0;
+}
+#content {
+  margin:0px;
+  padding:5px;
+  text-align:center;
+  list-style:none;
+  white-space:nowrap;
+}
+#content LI {
+  display:inline-block;
+  margin:0 -2px;
+  vertical-align:top;
+}
+#content LI A {
+  display:inline-block;
+  border:rgb(255, 0, 0) 1px solid;
+  margin:0 30px 0 0;
+  padding:10px 20px;
+  text-decoration:none;
+  color:rgb(255, 255, 255);
+  vertical-align:bottom;
+}
+#content LI A:hover {
+  color:rgb(187, 113, 113);
+}
+@-moz-document url-prefix() {
+  #content LI {display:-moz-inline-grid;display:inline-block;} /*For FF2 only*/
+  #content LI {margin:0 -2px;} /*For FF*/        
+  #content LI, x:-moz-any-link, x:default { margin:0 -2px;} /*For FF3*/
+}
+ 
+</style>
+<!--[if lte IE 7]>
+<style type="text/css">
+#content LI {
+  display:inline;
+  margin:0;
+}
+</style>
+<![endif]-->
+<body>
+  <br><br><br><br>
+  <center><h1>Our Certificates</h1></center>
+  <br><br><br>
+    
+    <style>
+      body{
+          background-image: url('https://www.colorhexa.com/adb2b5.png');
+          background-attachment: fixed;
+      }
+  </style>
+</body>
+<head>
+  <style>
+    .frame {
+      display: flex;
+      align-items: center;
+      width: 550px;
+      margin-bottom: 20px;
+      border: 2px solid black;
+      padding: 10px;
+    }
+
+    .frame img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      margin-right: 10px;
+    }
+
+    .frame-text {
+      font-size: 18px;
+    }
+  </style>
+</head>
+<head>
+  <style>
+    .frame {
+      display: flex;
+      align-items: center;
+      width: 550px;
+      margin-bottom: 20px;
+      border: 2px solid black;
+      padding: 10px;
+    }
+
+    .frame img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      margin-right: 10px;
+    }
+
+    .frame-text {
+      font-size: 18px;
+    }
+
+    .sidebar {
+      margin-left: 20px;
+      font-size: 20px;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="frame">
+    <img src="https://i0.wp.com/ekomkaryoga.com/wp-content/uploads/2018/05/registered-yoga-school-rys200.jpg?fit=500%2C350&ssl=1" alt="Image 1">
+    <div class="frame-text">
+      Certificate of Completion
+    </div>
+  </div>
+
+  <div class="frame">
+    <img src="https://www.wellnesshaven.com/wp-content/uploads/2013/06/WH-Teacher-Training-Certificate-April-30-2014.jpg" alt="Image 2">
+    <div class="frame-text">
+      Certificate of Completion
+    </div>
+  </div>
+
+  <div class="frame">
+    <img src="https://i0.wp.com/teachingyoga.net/wp-content/uploads/2012/05/yoga-alliance-certificate.jpg?fit=1646%2C1263&ssl=1" alt="Image 3">
+    <div class="frame-text">
+      Certificate of Registration
+    </div>
+  </div>
+
+  <div class="frame">
+    <img src="https://yogagoaindia.com/wp-content/uploads/2022/06/hyvc-certificate.jpg" alt="Image 4">
+    <div class="frame-text">
+      Certificate of Training Course
+    </div>
+  </div>
+
+  <div class="frame">
+    <img src="https://i.pinimg.com/originals/6f/2b/d7/6f2bd7f7dc393cad5b16b0b6657746f4.jpg" alt="Image 5">
+    <div class="frame-text">
+      Certificate of Therapists
+    </div>
+  </div>
+
+  <div class="sidebar">
+    <h2>What do certificates mean for our yoga studio?</h2>
+    <br>
+    <p>
+      Certificates play a vital role in our yoga studio as they demonstrate the achievements and qualifications of our instructors. These certificates serve as evidence of successful completion of various yoga programs, training courses, and registrations. They signify that our instructors have acquired the necessary knowledge, skills, and expertise in yoga practice, teaching methodologies, and therapeutic techniques.
+    </p>
+    <p>
+      By showcasing these certificates, we aim to assure our students and clients that they are learning and practicing yoga under the guidance of highly trained and qualified instructors. These certificates not only validate the expertise of our instructors but also provide a sense of trust and confidence to our students, ensuring they receive high-quality instruction and guidance.
+    </p>
+    <p>
+      We take pride in our instructors' accomplishments and their commitment to continuous learning and professional development. Our yoga studio believes in maintaining the highest standards of excellence, and these certificates are a testament to that commitment.
+    </p>
+  </div>
+</body>
+<br><br><br>
+<center><h1>Our Trainers</h1></center>
+<br><br><br>
+<head>
+  <style>
+    .container {
+      display: inline-block;
+      position: relative;
+      margin: 10px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .container:hover {
+      transform: scale(1.2);
+    }
+
+    .container img {
+      display: block;
+      width: 200px;
+      height: 200px;
+    }
+
+    .caption {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      padding: 10px;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .container:hover .caption {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <center>
+  <div class="container">
+    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUVFRgWFRUYGBgYGhgYGBgYGBgYGBoZGhwaGRgYGBgcIS4lHB4rHxgYJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMBgYGEAYGEDEdFh0xMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMf/AABEIAPsAyQMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAADAQIEBQYABwj/xAA7EAACAQIEBAQDBgQGAwEAAAABAhEAIQMEEjEFQVFhInGBkQYysQcTQqHR8BRScsEjYoKS4fEkorIV/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AM6q0RRSAUQUHAUopNVLNAoqRlsEE+NgoPcAzyEcqbhoeW9iO0UN8FTGqZgx5+ftQHzOPgJzZyRbTZQZ8QJO9uYtUTFxZYkDwxYGSRJ3HL9morYakiVmTAi3p5UXEJRDBiALkyPCfrt3oAjFYz8oJkj32I5dI70EOSwUWG0wSNyJ6j/quyGZVPEy6jveY7wdp50RMwgEkSSCSOUSZuOV+XeglZc6BupWDAMG9ztvYA3jlUTHx2HgBEzZ/lg+Z99ulNlOUjlGxuL+5m3lS4aCdZPyRI0qTJ+XwkjVJj3oBqGLwexJGzX36d6kJhMDqG0EXMyf7bz6UzLkFC+kxMEySd5tFojl70TN5oggQROmxtC9+5ke1BKymKuL4GBBQGOfQAGBYW6UB8QfLNhP7F+01X4uKQxZIMnmOYM/oatMxlXdUxF0kFdJM3kCJPck+dAqFUBDSw5EmYN9vr60ZDhMdAbTMwxkKG3E3kD9ajZfHJ8PSx5evbf92qT92HkEQRcQACeduhoJeBqXppOpQVuO+3c2PekxoJEbAR5gDemZBCDoub3Bt4gRpuNrH1ipLYZvcEjqB5W9fpQQ8bCjy697287UMVaplldIBAaTuf5T03Fqg5nBKHSY9L+9AA0NlotdFBFdaZpqS4ocUCGiLtQ6QtQEZhSICbChzUvL4YgkmTaw3m8eYmJoJChVA7iQBzjc/X1rmwg4uWkXIi8cunKbjtUfBl3HhA3nYeEC53kb95mpOM5bVpMBdpJOqLxI/pJ9aCuxcPU6qguSBvYCY35Wp/E8dCulSAoszEbkAHTbla3nU3IYZUM9lLITBBiIY78iR16GqdEATeYbxKZBVuW/KCfbtQBOGxhV8QOk3iwuLwNt7UTLZMrBJ8MFdJkAxMhiBb/k1Ly6fKVIIcTBUEEDYahYHT+YinZXKkuhYFQC2oEEC3iv0mY626Cgq86iI5XxagAIJNiImTz5j26VMz+OHRAtlMzMSu+9pi55xegcUh3I08y2+wPy3uOf/VR3hFhQZJK8jA3ieV/pQWHDcBoZxZSGAEwreEmxvfwkxaQN6rcwdTliTYwZk35/3oj5tkRcE6p1aiJEEG49L0DGI0kgRtO8Tt+cD2oJOWytxBNzAjc7zHW01P8AugpYh2QA2ixgg6gDIFxFufWqVMUhgQbkSDax5wT1/tT8TEY82LTMzAjv3/4oJ2ZTREH/ADXjmJm07W/OpGWcsBLSIBUgyep25zQsXDXETwqRCDmbmSOY3oWC4kzawMe2xGwn3oLtGOkM5CgkSYg25ADc3m87npawZWEFhIIEadJmZWJ3i375UWgwBuJPTYm5gX3/AGKnZDGK6gCFUiDYsLGJE7TcUHZwMjE+E6jaOQN4/fMUZ3OIgkSyjeYkW5T2+tSM0qvha1s0aWVjBF7RfbtHIVXZexABvz225EnpQCK0homILmhmgaRTYp5ptAEmmFq5jQmagKgJsKmYWEykgXaQF0kTuDbve3lUbKaSGDNFveKscDGUIIjxbyDsN2sZmBz6EUEjCwoEKJcyWXUwsFki89DPr0qMyFnTCRtUtqYQoExJBBgkQDY7xS5rNqqRhIS7RpaOcCYI7Fge8VS5l2LqROrUszAh+kruO9Bb8VzEuUG2syo1FpHOx8KkiSK7O5XSjGSGTTpsJsNjfzAPO21RsoGZzMLHiZ4JHPV1JFtudC4g0mRZGnw8thBUcri30tQREUMGixDQYPlbl2N+lHXP4kaRJKiNemWbpe+24PpXcMw31NqWFYalgbxzEc9+lQM/nGQQhIjqBMcvz+goF+SRrl2bUQIiZ2a29pkV2YcYRZXcM6ztB8U3W46GZqr/AIvELBidiCCYtBMelAzGKXYu253/AE+lA5sQzI6+3auOMZm1MXf2tXRfcX/KgKubbmAbgjlG1h2qRh4wJBmDtFo58uY23qEFmiqg9e3LsaDWZIpiYZCHSVC/O0pcy1iObeW3OZqHjYa77hT4iI0mDBIj8Py1T4eIBvY35W5R3jerjKJuAAY+cajebWmQfKCbUEvB0lV0sVMAGIi/c8ze21EZTPiYBgoZo0jwxY6QNoi45Xrsqx0DSrMQ5OlogR2PzTB2B2rlLBSyqFvpuPCZgab+poCHMKzGCAXAMGANiGC3622PPnU1MBkXxLt4TeDtImBbnz5GqzG4iBqCABhIZjE3GkqsAjTE2M8/UeSxnUw195uSdjud4vQWmYCkagI7SCOZtUQ1YoAyuoWCVDSfci23S/TvVcTQcabTjSUEBjQnanMaC5oJORKz4uottInry5VJfNaW+Uuq2gsedvyMnv8AWrwwSwixmpOHmBra8g2JvcE/WglZbO4jyy6URPmO3fwXuQBTETUuqIEgSQZJO7GNzzoACspRGsreLlbv6mpQVPArNpDQG3IIH+WR0GxoHZHFhnUWhRtMyDF+lpPt6kXAAALhRcmJE6ZBuepBJ2qJ90qy6XMgncQByN+ZHtUjGcOizcoFNoWwGohTvPzWjl60FdjcTww5AmNgVmPy2NxI5VV4rE3JsxJiwO/QU3D3YyPmJkwTBJ2nvU/h+V1kKeoA353uf3vQViZckG21/PrRMLKsyEgG29toE36bV6JwX4ZW5ZZldJB5k7xfyrS5P4QwFQqVnUL9vLtQePHhLaQQN+f9vPb3prcNcuQEPzKoHdjAXzn6V7mfh7CYQVHIbcpP60h+GMIMzabm/kYInzuaDxM8Hf8AlPnuIid+ptTH4c6tGnkCJ7gMD3sRbvXvCcEwx+Ebn6R+/OqzOfDKXIW56DvJibSYoPFXwp3Bv28/0HvUjIY/zJa8EGCTbmPYD1NbTjPw3pQEKCYg7ja5I7ADb/NWBzKaXnpcjt/1NBrXSECAlNesJrDEMAVj5VPiLWkE35AVCw8uzAymoqCvi1QsGTpO1uk7zR+H8U1KuEilCpDg38RUCD1nYzzkbVMwMymK5OggqWXTY7EzMi1zckH5e80FXl8upA3BIIPO4n5TNxz71Lw8MDkBsDA2tbbYfrTfu2ZnmQykuVEaQDzECNxtPLa1NbE0MGI1I1j6cp9dqCxwcZVW86TzHtF97fWomMV1HR8vKafgqHSA1hJE7TaQOexmoy0D5rpps11BVsaE5p7mgsaBjMdqZiIV2IvYH9KRzTMLGKntzFBJ4diKGYMdxeTzBtHWtAjn+JQhZhDoGlokizEINW/5xWZdQTqggA26iK0nBcPZ0Y6nUqRcKBpPhLAgqTFv73oAhIGgEapki+w38QH7ij8SZFR3ZAV0BbWItYAgmYgRtULPkpo021lyTEyNQXUDMdbRvM1XcbxzAQOrLJuAZMAbk/8AXSggZcE7+cm9egfDvDQ6K0kEGYMG1iJ63rCcPXUQt7/UbAV6j8OjwL+z60GmyCRaAPIRerZFqsyoq3wRQOw1oxSlRaOBQRClBxEtU5loGKtBS5/ABRhANrSJvXiHH8ocPEaRcnzgzYC3QiveswteY/G+SIBYCSDub2PT98qDG8IzDKSRumw5crdOUVoDjYaIzA6WxIImCQZGogCYG5kCbd6y+XzMESsztfYm36e1XzY6M6YbAGB15ETYxIuR1sKCxQYhBLr4/DLNuV2ACmBJkX3gVBzOKsFAAJOogfKCbwo5C/51chECadWsagZB8JAOmWBvABAk9TWexVh2kybCZtAIgQIFrigKjRYGnqaApoimgNSzQwadNBVuaA5oz1HegC5oDtRXoD0EwOzSLdo0gSd+fT6VpuFppRCFaSt4UkajYEkc/W071imcwB0mPWtbwPMKMBiEJaCWLAw0DZT5mfNedBJ43lQqIUhW1FiDrLSCYdSSRp7rYkHpWW4004rxIAI8J/CYGof7p961ObwgfukbxvpLNigRKBYUMFJmCtyRIE2tFZrOYD4n3mJ4fCQIF5gATPMxeecmgPwTAllaK9G4CbVgvh1vDHMGtvwTEhiD1oNflhVtgmKqsmQ3Me9WuEKCYDTg1BBp00DyaDimn6qFmMVVBLEAdTagi4grJfEmWDq4I5VdPxtGYqiMwEgsBb061V8QxQ6Mw2g/l1oPFzhm5g2aJg23/SrnhCucbDZIB0neCCApLgLPMT7ii/wZXKYrnZsRIsL+Ii/rNRuGOgMMvS8kbSdxtzoNRi5cGTo0XIKsLpMSZJ8JsOsEm1Z/MuC7QZE2PrU7j/F1xdCIICA6j1nYSNwIqoSgkIaIKCtFFA6aXVSV00Fc9BejvQHoI70B6kOKA4oANWg4LiNiomHpfQhl9FyQ7AXEbRznlVAwqTl85oRlWQzkBuhUGY/LpQWfEONjWwXDVSkomkgJp5/KBMmTaN6k8BnGw8RfxfeamA6Mh/ulZd2kya1X2eYqjMOrfiwzp/qU/WCaAfC8Mo7IRtf05Vo0diyIv4miewkz7VX8QT/yNcWawPXTE/UVd5fKMUDrPpvQWqcEeA2HmIYbho/tepODxPM4TQ8OPasUmLmMR8UoWIwUZ3DMy+FQTCKpBLW5mO1T/hrHfMthquHqdkxMR/DiIwGGyJ4MT5GnUDA52MTcPS8jxEOBbSeYNWKNNZH7t0QMCTBjVt/uHI1pOGuWSaBM9nAikxJ5CsXmcw+YclyxUGNKWUdtTELPrWm4jk2cm8AAyayfGvhnMFsJ8JwyAvrwXDsgGmElUZWaTqkhrEjlNBdYHGERAq4cJYFlZHAkT4tDEjzilx8MEMeTX/tWYwfhDTlsHUpTMqxZ3RjCqWJCNeGYAgWnz51tHyqphQCTA3O5oMR8VcOODw5CLBnSR1kM8+4rAJXpvx6T/wDn4YNvFhlRzuGn8h+deZJQGWjJQVoq0Bloq0NaetA+limilmggPQGo70FqALigsKkNQHFBHcUM0ZxQmFAyrL4ezITGE/jBQEWIYwUI/wBQHvVbST0t3oPROOZfQFZWlIDAHkxADwehkH0rUfDR1YSisNk/iLAxcEJmWKOsgsEYhrWYaQYPbrWq+C84GVRPIEd6C/y3CnwnZgpKsdWpZBBO4Mcpq54XlRhgjDwwk7woQdTt3vAqyyriKO1BXY2FAMxLfNA36T1qRw1IWKhZnEJcqomLnt286sMh8tBzqJoL5KbqxE9bj86kZgXpuBinZhBHt6UAE4dzZpi4GwqLxAQrDsatXxRFZT4r4quHhuZuFJ9gaDFfaNxAMcLBBkoodh/LKwo84JPt1rGKKRsRnYu7FmYyWO5NPWgetEWmLT1oDIaeKGtPFA+lptdQQ3oLUZqE1ANqA9GagvQCagsKO1CagCaQ09hTDQMNbL4UzbLhhgboYI7VjTV58K5oK7Ixs4/f9j6UHtnA+MB1E2NXT51etZLgow3SYhlFx0POjZ/iWBh2Z9Atczz2oJ2H8QYCO4dwpnnVxkOI4b3R1YHYgyPesh9zlsbxawx8j9YqZw/guCCSrsp7FlBoNDxHjOHhXbUx5Kg1MfTkO5gU3J5o4q6ypQHZWjUPODFATCwU3ueZhjPrzqNmviDLoQgZixsqqjEnyAH7igkcSxXQeETXnvxpisuE2v5nZUA6D5z9AK3uNmwyhrwBNxB2ryz434hrxVQH5JY/1NsPYD3oM4goi0MUVaB609aatPWgItOFMFPBoHV1NrqCK1CaitQWoBtQmorUNqATUNqKwobUAmoZopphFAM12G5Vgy7gyKUimNQen8A4kYVxvAkVomyqYqnYg3ANx3VhzBrA8GxCiqegH0rW8IzMNp5Hb9KAnCeH4aYmgs+FzAXSUPVQHUx5CK2+WyRUWxAf6kJ+hqi/hNe4n0n8qsMthuggao6SSKCVnsooWXxHgSTpAQfnJ/MVX8MyWHrLhIAFi0lj5k3jtUp8m7kFgTG0zHsafmV0IR2vQZz4m4mEV22VRPn0X1NeU4mKzsXa5YknzNbn40k5Zj/mX/6F/pWDSgeKItMWiCgetPU0wU5aB4p60MU8UC0s0ldNBFahtRDQmoBvQzRHoZoGNQ2ohphFAI0xhRGp+Xyr4jBEUsx5D6noO9BFNScrkmcgkQv18q2HCvg2F14sFtwv4R+tSxwo6ttqCHkMG3lVkMTQQRNvcUTJZftRcbAmYH786DS8G4mCAZkHnWqy+OpEgivMeGDQd4+lXi5twPC0UGyzGaVRvVBncfWdI259+1VWE2K7eJzp6C1XWWy3agquJ5AOmlhINiDsR0rA8b+GcTLy6Avhm8i7J2YdO9et4uCCRRkyoiCJFB4EtEWvU/iT4CTFBfAjDfePwOe4HynuPY15jnMq+C5w8VCjruDsRyKnYjuKBgpy02nCgeKcDTFp4oFpZpJrpoIpobURjQnNA1qE1Kz00igQ0w0/TS/d0AorZ/Zngq2PiA7/AHYI9Gg//QrIaa0n2f5nRnkHJw+GfUal/wDZFHrQeqPlelQcxkQFMb1oHIAqDjntQZ/Cyem1OwsrcirEpepWXyhJmKCnThonap2Hw9RyHsKtTlxSslBFy+WA5VPwMKnYGHA86kpagEMK81KRKatGRqBSteKfajmg+eKDbCw0Q/1NLt+Tr7V7W+IoBJMAAknoBvXzlxfOnHx8XG/nxHcf0knSPRYHpQQ1xWG9/OjJmFO9qjsKGVoLNTTxVWrsu01Jw831FBLinRQ0xAdjTtVBDdoFR2M0uO946fWuSg4LSxT4pKBAK6nRXCgZF6LlsZkdHWzIyuvmpDD8xTYrjQfQnDsyuPhJiL8rqrjtImD3G1HfLisR9lHFteE+WY+LDOtP6GPiA8mM/wCsV6ARQQUyS9KmLhACAKVRR1FBFbBmmjLVN01xWgBh4VPbCoqrSxQBGDS/dUauigyf2g8QGBkngw+L/hJ/rnWfRA35V4gRW0+03jH32a+7UymACnYubufSFXzU1jDQMikp1dFAMikIFEJpAtALT0tTvvn/AJjTylN00EYXM9aejeKKQjamOYYGgmgV1ctcaDprhXRXCg6uIpa4UFj8PcVbK5lMYTCmHA/Ehs6+23cCvoHBdXUMpBVgGUjYgiQR6V82GvXfst4z97gNgOfHg/L3w22/2mR5FaDdgU5aQUooH11IBS0HV1dXUHVSfFvGxlMu+JI1nwYY6uwMW5gAFj2WruvFPtC47/E5gqpnDwZVI2Zvxt6kADsvegybuSSSSSbkm5JNySes0M05qQ0CU00pNcFoEC04ClpAaDiaZqp5pIoIuJt5UHEO1Ge96jubeVBPQ2p4PWo2UxZsalgUDa4ilikoEU06miloFIq3+EuMfwmaTE/BOh+6NZvazf6RVTQ8SYnpQfTS7WpwFZf7O+LfxOSSTL4X+E/XwgaD/sK36g1qqDq6urqDq6uqNn82mDhviYhhEUsx7DkBzJ2A5k0Ga+0P4h/hsDQhjFxgVWN0T8b9jyHczyrxarPjvFnzWO2M9tRhV3CoPkUeQ9ySedVhoEpIpYrqBoFcKdSRQJXUopaATtAJqF961Sc2bAdTQdNAxjBP79aGw3omLuKG1A3CeGBqyV6qj/epqcqCXSTSimmgdXRSLRFoGVzCnVzUG0+x/iejM4mATbFW39aSw/8AUv7CvZa+c/hHEK57AIMH7zCE/wBThT+RI9a+jaBDTAac1MSgeK8l+0n4k++xP4bCb/Dw28ZBs2IOXdVuP6p/lFeh/FWYbDyeYdGKsuExVhuDG4rwKgRmpKWuFA2lrqUUCUgFOFcaBDSTXNTGoIuYMsPKuiuxPmp1B//Z" alt="Image 1">
+    <div class="caption"><p>Pilin</p> Anice</div>
+  </div>
+
+  <div class="container">
+    <img src="https://i1.sndcdn.com/artworks-000268968983-072zv1-t500x500.jpg" alt="Image 2">
+    <div class="caption">Kathryn Budig</div>
+  </div>
+
+  <div class="container">
+    <img src="https://d26oc3sg82pgk3.cloudfront.net/files/media/uploads/searchease/20665/headshot1small-bWFpbi1uLW4tMC0wLTAtNjA5LTcwMg%3D%3D.jpg" alt="Image 3">
+    <div class="caption">Heidi Kristoffer</div>
+  </div>
+
+  <div class="container">
+    <img src="https://64.media.tumblr.com/5e32136ab450ad673cb5f88700d37507/tumblr_inline_p886s0eAPd1svjijh_400.jpg" alt="Image 4">
+    <div class="caption">Matthew Thomas Lombardo</div>
+  </div>
+
+  <div class="container">
+    <img src="https://kristinmcgee.com/wp-content/uploads/2012/07/DSC_6270-355x400.jpg" alt="Image 5">
+    <div class="caption">Kristin McGee</div>
+  </div>
+</center>
+<br><br><br>
+<center><h1>Our Team</h1></center>
+<br><br><br>
+<center><img src="https://hotyogacville.com/wp-content/uploads/2017/04/Yoga-Classes-Group-Classes-Private-Training.jpg" alt="Yoga Classes" /></center>
+
+<br><br>
+<div class="sidebar">
+  <p>There is something special and attractive in the world of yoga. It is not only a physical practice, but also a spiritual path that can bring people together. And in our yoga team, we found true friendship and support.</p>
+  
+  <p>Our team consists of unique individuals, each of whom came to yoga with their own history and motivation. Some of us have taken up yoga for physical health in an effort to improve the flexibility and strength of the body. Others have found in yoga a way to relax, get rid of stress and find inner harmony. Regardless of the reasons that led us to yoga, we have found that our common love for the practice brings us closer and creates a unique atmosphere in our team.</p>
+</div>
+<br><br><br><br>
+</body>
+</html>
