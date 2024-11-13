@@ -8,7 +8,7 @@
     <ul class="menu">
       <li><a href="index.html">Main</a></li>
       <li><a href="2.html">Our Certificates/Instructors</a></li>
-      <li><a href="3.html">Prices</a></li>
+      <li><a href="3.html">Prices/Registration</a></li>
       <li><a href="4.html">Contacts</a></li>
     </ul>
   </header>
@@ -412,7 +412,7 @@
 <body>
 
   <div class="image-container">
-    <img src="https://www.qrcode-monkey.com/img/blog/qrcode-low-contrast.png" 
+    <img src="https://sun9-51.userapi.com/s/v1/ig2/MB4xyrssM8bOh0rHV8x9A_kPxsyceSXNkx276HJpS5yyXdt82E_ZQO0ntrmHS4wtbB2MeK4fiJGTeQ6gZ9TUnJam.jpg?quality=95&as=32x32,48x49,72x73,108x110,160x162,240x244,360x365,480x487,540x548,640x650,666x676&from=bu&u=ovHAAfUBI8NpQTFmPWtO17-BiZQCrFAhbBOLBVjqaQ0&cs=510x518" 
          alt="QR Code" class="attention-image">
   </div>
 
@@ -526,7 +526,7 @@
         background-attachment: fixed;
     }
 </style>
-<br><br><br><br>
+
 <div><style>
     .note {
         font-family: 'Arial', sans-serif; /* Шрифт Arial */
@@ -542,7 +542,323 @@
         color: #fec1c6; /* Цвет текста при наведении (например, оранжевый) */
     }
 </style>
-<p class="note">Yoga Studio Sunshine - Since 2022</p></div>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        form {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border: 2px solid #fec1c6; /* Рамка */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], input[type="tel"], input[type="date"], select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #fec1c6;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ec8d94; /* Изменено для лучшего эффекта при наведении */
+        }
+        .message {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
 
+<form action="https://formspree.io/f/myzyyjon" method="POST">
+    <h2>Sign Up for Membership</h2>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="_replyto" required>
+
+    <label for="phone">Phone number:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="date">Choose a Date:</label>
+    <input type="date" id="date" name="date" required>
+
+    <label for="class">Choose type of Membership:</label>
+    <select id="class" name="class" required>
+        <option value="Утренний класс">Adult Day Pass</option>
+        <option value="Вечерний класс">Adult Evening Pass</option>
+        <option value="Утренний класс c">Student Day Pass</option>
+        <option value="Вечерний класс c">Student Evening Pass</option>
+        <option value="Бассейн">Membership with Pool Access</option>
+        <option value="Креокамера и Сауна">Membership with Cryotherapy and Salt Cave</option>
+        <option value="Пенсионер">Pensioner Pass</option>
+    </select>
+
+    <label for="message" class="message">Message (optional):</label>
+    <textarea id="message" name="message" rows="4"></textarea>
+
+    <button type="submit">Sign up</button>
+</form>
+
+</body>
+
+<div>
+  <h3>Subscription Cost Calculator:</h3>
+
+  <label for="subscription">Select subscription type:</label>
+  <select id="subscription">
+    <option value="adult_day_4">Adult Day Pass (10:00 - 13:00) - 4 classes ($19.99)</option>
+    <option value="adult_day_6">Adult Day Pass (10:00 - 13:00) - 6 classes ($24.99)</option>
+    <option value="adult_day_8">Adult Day Pass (10:00 - 13:00) - 8 classes ($34.99)</option>
+    <option value="adult_day_12">Adult Day Pass (10:00 - 13:00) - 12 classes ($44.99)</option>
+    <option value="adult_evening_4">Adult Evening Pass (18:00 - 21:00) - 4 classes ($24.99)</option>
+    <option value="adult_evening_6">Adult Evening Pass (18:00 - 21:00) - 6 classes ($34.99)</option>
+    <option value="adult_evening_8">Adult Evening Pass (18:00 - 21:00) - 8 classes ($44.99)</option>
+    <option value="adult_evening_12">Adult Evening Pass (18:00 - 21:00) - 12 classes ($59.99)</option>
+    <option value="pool_access_4">Membership with Pool Access - 4 classes ($39.99)</option>
+    <option value="cryotherapy_4">Membership with Cryotherapy and Salt Cave - 4 classes ($54.99)</option>
+    <option value="pensioner">Pensioner Pass ($1.00)</option>
+  </select>
+
+  <label for="months">Select duration (in months):</label>
+  <input type="number" id="months" value="1" min="1" max="12">
+
+  <button onclick="calculatePrice()">Calculate</button>
+
+  <h4 id="totalPrice"></h4>
+</div>
+
+<script>
+  function calculatePrice() {
+    const subscription = document.getElementById('subscription').value;
+    const months = parseInt(document.getElementById('months').value);
+
+    // Проверка на ввод значения для месяцев
+    if (isNaN(months) || months < 1 || months > 12) {
+      document.getElementById('totalPrice').innerText = "Please select a valid number of months (1-12).";
+      return;
+    }
+
+    let basePrice = 0;
+
+    // Устанавливаем базовую цену в зависимости от выбранного типа абонемента
+    switch (subscription) {
+      case "adult_day_4":
+        basePrice = 19.99;
+        break;
+      case "adult_day_6":
+        basePrice = 24.99;
+        break;
+      case "adult_day_8":
+        basePrice = 34.99;
+        break;
+      case "adult_day_12":
+        basePrice = 44.99;
+        break;
+      case "adult_evening_4":
+        basePrice = 24.99;
+        break;
+      case "adult_evening_6":
+        basePrice = 34.99;
+        break;
+      case "adult_evening_8":
+        basePrice = 44.99;
+        break;
+      case "adult_evening_12":
+        basePrice = 59.99;
+        break;
+      case "pool_access_4":
+        basePrice = 39.99;
+        break;
+      case "cryotherapy_4":
+        basePrice = 54.99;
+        break;
+      case "pensioner":
+        basePrice = 1.00;
+        break;
+      default:
+        basePrice = 0;
+        break;
+    }
+
+    let totalPrice;
+    
+    // Проверяем, выбрана ли подписка для пенсионеров
+    if (subscription === "pensioner") {
+      // Для пенсионеров скидка не применяется
+      totalPrice = basePrice * months;
+    } else {
+      // Рассчитываем скидку на основе количества месяцев (2.5% за каждый месяц после первого)
+      let discount = Math.min((months - 1) * 2.5, 30); // Максимальная скидка - 30%
+      totalPrice = basePrice * months * (1 - discount / 100);
+    }
+
+    // Выводим итоговую стоимость
+    document.getElementById('totalPrice').innerText = `Total cost for ${months} month(s): $${totalPrice.toFixed(2)}`;
+  }
+</script>
 <br><br>
+<p class="note">Yoga Studio Sunshine - Since 2022</p></div>
+<br><br>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Стиль для кнопки-иконки бота */
+    .chat-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #FEC1C6;  /* Цвет фона кнопки */
+      box-shadow: 0 0 10px rgba(254, 193, 198, 0.8);  /* Светящийся эффект */
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: glow 1s infinite alternate;  /* Анимация свечения */
+      z-index: 1000;
+    }
+
+    /* Анимация свечения */
+    @keyframes glow {
+      from { box-shadow: 0 0 5px rgba(254, 193, 198, 0.5); }
+      to { box-shadow: 0 0 15px rgba(254, 193, 198, 1); }
+    }
+
+    /* Скрытый блок для чата */
+    .chat-window {
+      display: none;
+      position: fixed;
+      bottom: 100px;
+      right: 20px;
+      width: 300px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      padding: 15px;
+      z-index: 1000;
+    }
+
+    /* Стиль для сообщений в чате */
+    #chatBox {
+      max-height: 200px;
+      overflow-y: auto;
+      margin-bottom: 10px;
+    }
+
+    .chat-window h3 {
+      text-align: center;
+      margin-top: 0;
+    }
+
+    .chat-window input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .chat-window button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      background-color: #FEC1C6;  /* Цвет фона кнопки */
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* Стиль для изображения бота */
+    .chat-icon img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Кнопка для открытия чата с изображением бота -->
+<div class="chat-button" onclick="toggleChat()">
+  <div class="chat-icon">
+    <img src="https://img.freepik.com/free-vector/graident-ai-robot-vectorart_78370-4114.jpg" alt="Chat Bot Icon">
+  </div>
+</div>
+
+<!-- Окно чата -->
+<div class="chat-window" id="chatWindow">
+  <h3>Chatbot</h3>
+  <div id="chatBox"></div>
+  <input type="text" id="userInput" placeholder="Your question">
+  <button onclick="getAnswer()">Send</button>
+</div>
+
+<script>
+  const chatBox = document.getElementById('chatBox');
+  const chatWindow = document.getElementById('chatWindow');
+
+  // Функция для переключения отображения окна чата
+  function toggleChat() {
+    if (chatWindow.style.display === 'none' || chatWindow.style.display === '') {
+      chatWindow.style.display = 'block';
+    } else {
+      chatWindow.style.display = 'none';
+    }
+  }
+
+  // Функция для обработки вопроса пользователя и отображения ответа бота
+  function getAnswer() {
+    const userQuestion = document.getElementById('userInput').value.toLowerCase();
+    let botAnswer;
+
+    if (userQuestion.includes("table")) {
+      botAnswer = "Our schedule is available from Monday to Saturday. Please choose a convenient time!";
+    } else if (userQuestion.includes("price")) {
+      botAnswer = "Lesson cost: 500 rubles for one lesson or a subscription for 10 classes for 4,000 rubles.";
+    } else {
+      botAnswer = "Sorry, I can't answer this question yet. Please contact us by phone.";
+    }
+
+    const userMessage = `<p><strong>You:</strong> ${userQuestion}</p>`;
+    const botMessage = `<p><strong>Bot:</strong> ${botAnswer}</p>`;
+    chatBox.innerHTML += userMessage + botMessage;
+
+    document.getElementById('userInput').value = '';
+  }
+</script>
+
+</body>
 </html>
