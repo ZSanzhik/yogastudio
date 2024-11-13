@@ -8,7 +8,7 @@
     <ul class="menu">
       <li><a href="index.html">Main</a></li>
       <li><a href="2.html">Our Certificates/Instructors</a></li>
-      <li><a href="3.html">Prices</a></li>
+      <li><a href="3.html">Prices/Registration</a></li>
       <li><a href="4.html">Contacts</a></li>
     </ul>
   </header>
@@ -494,8 +494,7 @@
 
 
 </body>
-<br><br><br>
-<br><br><br><br>
+<br>
 <style>
     .note {
         font-family: 'Arial', sans-serif; /* Шрифт Arial */
@@ -511,7 +510,351 @@
         color: #fec1c6; /* Цвет текста при наведении (например, оранжевый) */
     }
 </style>
+<head>
 
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yoga Studio Reviews</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    /* Style for the review form */
+    #reviewForm {
+      background-color: #F9F9F9;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #reviewForm label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    #reviewForm input, #reviewForm textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      font-size: 1em;
+    }
+
+    #reviewForm button {
+      background-color: #FEC1C6;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+
+    #reviewForm button:hover {
+      background-color: #F9A7B2;
+    }
+
+    /* Style for the reviews */
+    .review {
+      background-color: #F1F1F1;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .review h4 {
+      margin: 0;
+      font-size: 1.2em;
+    }
+
+    .review .rating {
+      color: gold;
+      font-size: 1.2em;
+    }
+
+    .review .date {
+      font-size: 0.9em;
+      color: #777;
+    }
+
+    .review p {
+      font-size: 1em;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div>
+    <h3>Leave a Review for Our Yoga Studio:</h3>
+    <form id="reviewForm">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="rating">Rating (1-5):</label>
+      <input type="number" id="rating" min="1" max="5" required>
+
+      <label for="comment">Comment:</label>
+      <textarea id="comment" required></textarea>
+
+      <button type="submit">Submit Review</button>
+    </form>
+
+    <h3>Reviews:</h3>
+    <div id="reviews">
+      <!-- Example Reviews -->
+      <div class="review">
+        <h4>John Doe</h4>
+        <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="date">November 12, 2024</div>
+        <p>Great yoga studio! The atmosphere is relaxing and the instructors are professional. Highly recommend!</p>
+      </div>
+      <div class="review">
+        <h4>Jane Smith</h4>
+        <div class="rating">&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="date">November 11, 2024</div>
+        <p>Amazing experience! The yoga classes are well-structured, but I think the schedule could be improved.</p>
+      </div>
+      <div class="review">
+        <h4>Mike Johnson</h4>
+        <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="date">November 10, 2024</div>
+        <p>I love this place! It's perfect for beginners and experienced practitioners alike. The instructors are very helpful and the environment is calming.</p>
+      </div>
+      <div class="review">
+        <h4>Emily Davis</h4>
+        <div class="rating">&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="date">November 9, 2024</div>
+        <p>The studio is beautiful and well-maintained. I wish there were more evening classes available.</p>
+      </div>
+      <div class="review">
+        <h4>Sarah Lee</h4>
+        <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="date">November 8, 2024</div>
+        <p>Such a peaceful place to practice yoga. I’ve been coming here for months and it’s become a regular part of my routine. Love it!</p>
+      </div>
+      <div class="review">
+        <h4>David Green</h4>
+        <div class="rating">&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="date">November 7, 2024</div>
+        <p>Good overall experience. The instructors are great, but sometimes the classes can get crowded.</p>
+      </div>
+      <div class="review">
+        <h4>Alice Brown</h4>
+        <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="date">November 6, 2024</div>
+        <p>The yoga sessions are fantastic, and I love the mindfulness aspect they incorporate. Highly recommend the morning classes!</p>
+      </div>
+      <div class="review">
+        <h4>Mark Wilson</h4>
+        <div class="rating">&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="date">November 5, 2024</div>
+        <p>Very professional studio. I enjoyed the lessons, but the changing rooms could be more spacious.</p>
+      </div>
+      <div class="review">
+        <h4>Olivia Martinez</h4>
+        <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="date">November 4, 2024</div>
+        <p>Love this yoga studio! The atmosphere is amazing, and the instructors are always so friendly and attentive to everyone’s needs.</p>
+      </div>
+      <div class="review">
+        <h4>James Anderson</h4>
+        <div class="rating">&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="date">November 3, 2024</div>
+        <p>It’s a great place to unwind after a busy day, though I would like to see more variety in the class times.</p>
+      </div>
+      <div class="review">
+        <h4>Lily Johnson</h4>
+        <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="date">November 2, 2024</div>
+        <p>Absolutely love coming here! The sessions are well-paced, and I feel so much more energized after each class. Best studio in town!</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const reviewForm = document.getElementById('reviewForm');
+    const reviews = document.getElementById('reviews');
+
+    reviewForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const name = document.getElementById('name').value;
+      const rating = document.getElementById('rating').value;
+      const comment = document.getElementById('comment').value;
+
+      const date = new Date().toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      });
+
+      // Create stars for the rating
+      const stars = '&#9733;'.repeat(rating);
+
+      // Create a new review
+      const review = document.createElement('div');
+      review.classList.add('review');
+      review.innerHTML = `
+        <h4>${name}</h4>
+        <div class="rating">${stars}</div>
+        <div class="date">${date}</div>
+        <p>${comment}</p>
+      `;
+
+      // Append the new review to the list
+      reviews.appendChild(review);
+
+      // Clear the form
+      reviewForm.reset();
+    });
+  </script>
+
+</body>
+
+
+<br><br>
 <p class="note">Yoga Studio Sunshine - Since 2022</p>
 <br><br>
+ <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Стиль для кнопки-иконки бота */
+    .chat-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #FEC1C6;  /* Цвет фона кнопки */
+      box-shadow: 0 0 10px rgba(254, 193, 198, 0.8);  /* Светящийся эффект */
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: glow 1s infinite alternate;  /* Анимация свечения */
+      z-index: 1000;
+    }
+
+    /* Анимация свечения */
+    @keyframes glow {
+      from { box-shadow: 0 0 5px rgba(254, 193, 198, 0.5); }
+      to { box-shadow: 0 0 15px rgba(254, 193, 198, 1); }
+    }
+
+    /* Скрытый блок для чата */
+    .chat-window {
+      display: none;
+      position: fixed;
+      bottom: 100px;
+      right: 20px;
+      width: 300px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      padding: 15px;
+      z-index: 1000;
+    }
+
+    /* Стиль для сообщений в чате */
+    #chatBox {
+      max-height: 200px;
+      overflow-y: auto;
+      margin-bottom: 10px;
+    }
+
+    .chat-window h3 {
+      text-align: center;
+      margin-top: 0;
+    }
+
+    .chat-window input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .chat-window button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      background-color: #FEC1C6;  /* Цвет фона кнопки */
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* Стиль для изображения бота */
+    .chat-icon img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Кнопка для открытия чата с изображением бота -->
+<div class="chat-button" onclick="toggleChat()">
+  <div class="chat-icon">
+    <img src="https://img.freepik.com/free-vector/graident-ai-robot-vectorart_78370-4114.jpg" alt="Chat Bot Icon">
+  </div>
+</div>
+
+<!-- Окно чата -->
+<div class="chat-window" id="chatWindow">
+  <h3>Chatbot</h3>
+  <div id="chatBox"></div>
+  <input type="text" id="userInput" placeholder="Your question">
+  <button onclick="getAnswer()">Send</button>
+</div>
+
+<script>
+  const chatBox = document.getElementById('chatBox');
+  const chatWindow = document.getElementById('chatWindow');
+
+  // Функция для переключения отображения окна чата
+  function toggleChat() {
+    if (chatWindow.style.display === 'none' || chatWindow.style.display === '') {
+      chatWindow.style.display = 'block';
+    } else {
+      chatWindow.style.display = 'none';
+    }
+  }
+
+  // Функция для обработки вопроса пользователя и отображения ответа бота
+  function getAnswer() {
+    const userQuestion = document.getElementById('userInput').value.toLowerCase();
+    let botAnswer;
+
+    if (userQuestion.includes("table")) {
+      botAnswer = "Our schedule is available from Monday to Saturday. Please choose a convenient time!";
+    } else if (userQuestion.includes("price")) {
+      botAnswer = "Lesson cost: 500 rubles for one lesson or a subscription for 10 classes for 4,000 rubles.";
+    } else {
+      botAnswer = "Sorry, I can't answer this question yet. Please contact us by phone.";
+    }
+
+    const userMessage = `<p><strong>You:</strong> ${userQuestion}</p>`;
+    const botMessage = `<p><strong>Bot:</strong> ${botAnswer}</p>`;
+    chatBox.innerHTML += userMessage + botMessage;
+
+    document.getElementById('userInput').value = '';
+  }
+</script>
+
+</body>
 </html>
