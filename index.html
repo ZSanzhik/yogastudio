@@ -8,7 +8,7 @@
     <ul class="menu">
       <li><a href="index.html">Main</a></li>
       <li><a href="2.html">Our Certificates/Instructors</a></li>
-      <li><a href="3.html">Prices</a></li>
+      <li><a href="3.html">Prices/Registration</a></li>
       <li><a href="4.html">Contacts</a></li>
     </ul>
   </header>
@@ -442,4 +442,137 @@ Convenient</p>
 
 <p class="note">Yoga Studio Sunshine - Since 2022</p>
 <br><br>
+ <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Стиль для кнопки-иконки бота */
+    .chat-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #FEC1C6;  /* Цвет фона кнопки */
+      box-shadow: 0 0 10px rgba(254, 193, 198, 0.8);  /* Светящийся эффект */
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: glow 1s infinite alternate;  /* Анимация свечения */
+      z-index: 1000;
+    }
+
+    /* Анимация свечения */
+    @keyframes glow {
+      from { box-shadow: 0 0 5px rgba(254, 193, 198, 0.5); }
+      to { box-shadow: 0 0 15px rgba(254, 193, 198, 1); }
+    }
+
+    /* Скрытый блок для чата */
+    .chat-window {
+      display: none;
+      position: fixed;
+      bottom: 100px;
+      right: 20px;
+      width: 300px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      padding: 15px;
+      z-index: 1000;
+    }
+
+    /* Стиль для сообщений в чате */
+    #chatBox {
+      max-height: 200px;
+      overflow-y: auto;
+      margin-bottom: 10px;
+    }
+
+    .chat-window h3 {
+      text-align: center;
+      margin-top: 0;
+    }
+
+    .chat-window input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .chat-window button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      background-color: #FEC1C6;  /* Цвет фона кнопки */
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* Стиль для изображения бота */
+    .chat-icon img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Кнопка для открытия чата с изображением бота -->
+<div class="chat-button" onclick="toggleChat()">
+  <div class="chat-icon">
+    <img src="https://img.freepik.com/free-vector/graident-ai-robot-vectorart_78370-4114.jpg" alt="Chat Bot Icon">
+  </div>
+</div>
+
+<!-- Окно чата -->
+<div class="chat-window" id="chatWindow">
+  <h3>Chatbot</h3>
+  <div id="chatBox"></div>
+  <input type="text" id="userInput" placeholder="Your question">
+  <button onclick="getAnswer()">Send</button>
+</div>
+
+<script>
+  const chatBox = document.getElementById('chatBox');
+  const chatWindow = document.getElementById('chatWindow');
+
+  // Функция для переключения отображения окна чата
+  function toggleChat() {
+    if (chatWindow.style.display === 'none' || chatWindow.style.display === '') {
+      chatWindow.style.display = 'block';
+    } else {
+      chatWindow.style.display = 'none';
+    }
+  }
+
+  // Функция для обработки вопроса пользователя и отображения ответа бота
+  function getAnswer() {
+    const userQuestion = document.getElementById('userInput').value.toLowerCase();
+    let botAnswer;
+
+    if (userQuestion.includes("table")) {
+      botAnswer = "Our schedule is available from Monday to Saturday. Please choose a convenient time!";
+    } else if (userQuestion.includes("price")) {
+      botAnswer = "Lesson cost: 500 rubles for one lesson or a subscription for 10 classes for 4,000 rubles.";
+    } else {
+      botAnswer = "Sorry, I can't answer this question yet. Please contact us by phone.";
+    }
+
+    const userMessage = `<p><strong>You:</strong> ${userQuestion}</p>`;
+    const botMessage = `<p><strong>Bot:</strong> ${botAnswer}</p>`;
+    chatBox.innerHTML += userMessage + botMessage;
+
+    document.getElementById('userInput').value = '';
+  }
+</script>
+
+</body>
 </html>
